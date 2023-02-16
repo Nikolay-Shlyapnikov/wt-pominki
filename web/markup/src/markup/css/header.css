@@ -1,0 +1,47 @@
+.page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 25px 0;
+    backdrop-filter: blur(10px);
+    background-color: rgba(15, 19, 26, 0.5);
+}
+
+.page-header nav {
+    display: flex;
+    align-items: center;
+}
+
+.page-header nav > a {
+    margin: 16px 0;
+    transition-duration: 300ms;
+}
+
+.page-header nav ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.page-header nav ul:nth-child(2) {
+    margin-left: auto;
+}
+
+.page-header nav ul li:not(:first-child) {
+    margin-left: 30px;
+}
+
+.page-header nav ul li a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    transition-duration: 300ms;
+}
+
+.page-header nav a:hover {
+    filter: drop-shadow(0px 0px 15px rgb(25, 226, 255)) drop-shadow(0px 0px 15px rgb(25, 226, 255));
+}

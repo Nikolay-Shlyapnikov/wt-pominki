@@ -1,0 +1,49 @@
+.payment{
+    color: #FFF;
+    padding: 50px 0;
+    &__wrapper{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &__title{
+        font-size: 50px;
+        font-weight: 400;
+        text-align: center;
+        width: 100%;
+        position: relative;
+    }
+    &__title::after,&__title::before{
+        content: '';
+        width: calc(50px + 190 * (100vw/1200));
+        height: 1px;
+        position: absolute;
+        background-color: #FFF;
+        top:50%;
+        transform: translateY(-50%);
+    }
+    &__title::after{
+        right:0;
+    }
+    &__title::before{
+        left:0;
+    }
+    &__card{
+        padding: 0 20px;
+    }
+}
+.card{
+    &__title{
+        text-align: center;
+        font-size: 35px;
+    }
+    &__icons ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text{
+        font-size: 20px;
+        text-align: center;
+        margin-top:40px;
+    }
+}
