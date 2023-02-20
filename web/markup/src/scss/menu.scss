@@ -133,6 +133,21 @@ ul{
         margin-left: auto;
         cursor: pointer;
     }
+    &__button.active{
+        max-width: initial;
+        max-height: initial;
+        bottom: 12px;
+        width: 91px;
+        height: 40px;
+        background-color: #FFF;
+        color: #2A2A2A;
+        border: 1px solid #2A2A2A;
+        border-radius: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+        
 }
 
 @media (max-width: 768px){
