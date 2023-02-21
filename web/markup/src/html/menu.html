@@ -3,8 +3,7 @@
         <h2 class="menu__title">Наше меню</h2>
         <p class="menu__sub-title">Выбирайте понравившиеся блюда и добавляйте их в корзину</p>
         <a href="/nabor" class="menu__button">Перейти в наборы</a>
-        <ul class="menu__dishes">
-            <li data-id="1" class="menu__dishes-item">Супы</li>
+        <ul class="menu__dishes subcategory__list">
             <li data-id="2" class="menu__dishes-item">Блины</li>
             <li data-id="3" class="menu__dishes-item">Холодные закуски</li>
             <li data-id="4" class="menu__dishes-item">Салаты</li>
@@ -37,58 +36,33 @@
                     </div>
                 </button>
             </div>  
-            <div class="product">
-                <div class="product__img">
-                    <img src="" alt="">
-                </div>
-                <p class="product__name">Суп-лапша с курицей</p>
-                <p class="product__weight">300 г.</p>
-                <p class="product__price">320 &#8381;</p>
-                <button class="product__button">
-                    <div class="state-1">+</div>
-                    <div class="state-2">
-                        <div class="counter-btn product__minus">-</div>
-                        <div class="product__counter">1</div>
-                        <div class="counter-btn product__plus">+</div>
-                    </div>
-                </button>
-            </div>  
-            <div class="product">
-                <div class="product__img">
-                    <img src="" alt="">
-                </div>
-                <p class="product__name">Суп-лапша с курицей</p>
-                <p class="product__weight">300 г.</p>
-                <p class="product__price">320 &#8381;</p>
-                <button class="product__button">
-                    <div class="state-1">+</div>
-                    <div class="state-2">
-                        <div class="counter-btn product__minus">-</div>
-                        <div class="product__counter">1</div>
-                        <div class="counter-btn product__plus">+</div>
-                    </div>
-                </button>
-            </div>  
-            <div class="product">
-                <div class="product__img">
-                    <img src="" alt="">
-                </div>
-                <p class="product__name">Суп-лапша с курицей</p>
-                <p class="product__weight">300 г.</p>
-                <p class="product__price">320 &#8381;</p>
-                <button class="product__button">
-                    <div class="state-1">+</div>
-                    <div class="state-2">
-                        <div class="counter-btn product__minus">-</div>
-                        <div class="product__counter">1</div>
-                        <div class="counter-btn product__plus">+</div>
-                    </div>
-                </button>
-            </div>  
         </div>
     </div>
 </section>
 
 <template id="product">
+    <div class="product" data-id="1">
+        <img class="product__img" src="" alt="">
+        <p class="product__name"></p>
+        <p class="product__weight"><span></span> г.</p>
+        <p class="product__price"><span></span> &#8381;</p>
+        <button class="product__button">
+            <div class="state-1">+</div>
+            <div class="state-2">
+                <div class="counter-btn product__minus">-</div>
+                <div class="product__counter">1</div>
+                <div class="counter-btn product__plus">+</div>
+            </div>
+        </button>
+    </div>
+</template>
 
+<template id="filter">
+    <li data-id="1" class="menu__dishes-item subcategory__item">
+        <div class="subcategory__title"></div>
+    </li>
+</template>
+
+
+<template id="category">
 </template>
