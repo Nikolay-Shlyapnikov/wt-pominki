@@ -1,0 +1,90 @@
+<section class="kit">
+    <div class="container">
+        <h2 class="kit__title">Готовые наборы</h2>
+        <p class="kit__subtitle">Выберите подходящий вам набор блюд, согласно количеству гостей</p>
+        <a href="/menu" class="kit__href">Перейти в меню</a>
+        <div class="kit__wrapper">
+            <div class="kit__item product-id" data-id="1">
+                <div class="kit__img">
+                    <img src="" alt="">
+                </div>
+                <p class="kit__size">Мини</p>
+                <p class="kit__count">Рассчитанные на 6-8 персон</p>
+                <p class="kit__weight">~10кг</p>
+                <div class="kit__price">
+                    <p class="kit__old-price">10000 &#8381;</p>
+                    <p class="kit__new-price">8900 &#8381;</p>
+                </div>
+                <button class="kit__button product__button">
+                    <div class="state-1">+</div>
+                    <div class="state-2">
+                        <div class="counter-btn product__minus">-</div>
+                        <div class="product__counter">1</div>
+                        <div class="counter-btn product__plus">+</div>
+                    </div>
+                </button>
+                <button class="kit__modal-button">Поподробнее</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<template id="modal">
+    <div class="window__wrapper">
+        <div class="window">
+            <div class="modal-item__wrapper">
+                <img src="" alt="" class="modal-item__img">
+                <div class="modal-item__info">
+                    <div class="modal-item__title">Мини</div>
+                    <div class="modal-item__person-count">
+                        Рассчитан на<span class="min__size"></span>-<span class="max__size"></span> персон
+                    </div>
+                    <div class="modal-item__weight">~<span>25</span>кг.</div>
+                    <div class="modal-item__price"><span>22900</span> &#8381;</div>
+                    <button class="kit__button product__button">
+                        <div class="state-1">+</div>
+                        <div class="state-2">
+                            <div class="counter-btn product__minus">-</div>
+                            <div class="product__counter">1</div>
+                            <div class="counter-btn product__plus">+</div>
+                        </div>
+                    </button>
+                </div>
+                <div class="modal-item__list">
+                    <p class="modal-item__list-title">В набор входит</p>
+                    <ul class="modal-item__list">
+                        
+                    </ul>
+                </div>
+                <div class="cart__product-cross"></div>
+            </div>
+        </div>
+    </div>
+</template>
+<template id="kit">
+    <div class="kit__item">
+        <div class="kit__img">
+            <img src="" alt="">
+        </div>
+        <p class="kit__size">Мини</p>
+        <p class="kit__count">Рассчитанные на 6-8 персон</p>
+        <p class="kit__weight">~10кг</p>
+        <div class="kit__price">
+            <p class="kit__old-price">10000 &#8381;</p>
+            <p class="kit__new-price">8900 &#8381;</p>
+        </div>
+        <button class="kit__button">
+            <div class="state-1">+</div>
+            <div class="state-2">
+                <div class="counter-btn product__minus">-</div>
+                <div class="product__counter">1</div>
+                <div class="counter-btn product__plus">+</div>
+            </div>
+        </button>
+    </div>
+</template>
+
+<template id="product">
+    <li class="modal-item__list-item" ><span class="item-name"></span><span class="item-weight"></span></li>
+</template>

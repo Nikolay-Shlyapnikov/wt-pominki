@@ -1,0 +1,37 @@
+$white: #FFF;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding-top: 120px;
+    background-color: #0F1319;
+}
+
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+img {
+    display: block;
+}
+
+h2, p {
+    margin: 0;
+}
+@import 'null.scss';
+@import 'header.scss';
+@import 'footer.scss';
+@import 'adaptive.scss';
+@import 'kit.scss';
+@import 'modal.scss';
